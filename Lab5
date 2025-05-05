@@ -1,0 +1,13 @@
+def tek_indeksli_ortalamasi(B):
+    cəm = 0
+    say = 0
+    for i in range(1, len(B), 2):
+        cəm += B[i]
+        say += 1
+    if say == 0:
+        return None
+    ortalama = cəm / say
+    return ortalama
+B = [10, 20, 30, 40, 50, 60, 70]
+ortalama = tek_indeksli_ortalamasi(B)
+print(f"Tək indeksli elementlərin ədədi ortası: {ortalama}")
